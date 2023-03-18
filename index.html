@@ -2,12 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Results summary component</title>
-
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -15,33 +13,58 @@
   </style>
 </head>
 <body>
-
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
+<main class="all-cards">
+  <section class="card-left">
+      <h3 id="sub-title-top-card-left">Your Result</h3>
+      <div class="sinal-of-results">
+        <h1 id="title-results">76</h1>
+        <p id="p-results">of 100</p>
+      </div>
+      <h2 id="sub-title-bottom-card-left">Great</h2>
+      <p id="p-bottom-card-left">You scored higher than 65% of the people who have taken these tests.</p>
+  </section>
+    <section class="card-right">
+      <h3 id="sub-title-top-card-right">Summary</h3>
+      <ul>
+        <li class="list-content">
+          <div class="flex-icon-and-category">
+            <img src="assets/images/icon-reaction.svg" class="icon">
+            <p class="p-category Light-red">Reaction</p>
+          </div>
+          <div class="level-category">
+            <span class="bold-number-level-category">80</span> / 100</div>
+        </li>
+        <li class="list-content">
+          <div class="flex-icon-and-category">
+            <img src="assets/images/icon-memory.svg" class="icon">
+            <p class="p-category Orangey-yellow">Memory</p>
+          </div>
+          <div class="level-category">
+            <span class="bold-number-level-category">92</span> / 100</div>
+        </li>
+        <li class="list-content">
+         <div class="flex-icon-and-category">
+           <img src="assets/images/icon-verbal.svg" class="icon">
+           <p class="p-category Green-teal">Verbal</p>
+         </div>
+          <div class="level-category">
+            <span class="bold-number-level-category">61</span> / 100</div>
+        </li>
+        <li class="list-content">
+          <div class="flex-icon-and-category">
+            <img src="assets/images/icon-visual.svg" class="icon">
+            <p class="p-category Cobalt-blue">Visual</p>
+          </div>
+          <div class="level-category">
+            <span class="bold-number-level-category"> 72 </span>/ 100</div>
+        </li>
+      </ul>
+      <button id="btn-bottom-card-right">Continue</button>
+    </section>
+</main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/RebecaFreitass" target="_blank">Rebeca Freitas</a>.
   </div>
 </body>
 </html>
